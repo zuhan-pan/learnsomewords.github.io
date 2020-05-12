@@ -61,9 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const grid = document.querySelector('.grid');
   const resultDisplay = document.querySelector('#result');
+  const timeLeft = document.querySelector('#time-left');
+  
   var cardsChosen = [];
   var cardsChosenId = [];
   var cardsWon = [];
+  let currentTime = timeLeft.textContent;
   
   //create your board
   function createBoard() {
@@ -101,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsChosenId = [];
     resultDisplay.textContent = cardsWon.length;
     if  (cardsWon.length === cardArray.length/2) {
-      resultDisplay.textContent = 'Congratulations! You found them all!';
+      alert('Congratulations! You found them all! ');
     };
       
   }//close check for match
@@ -114,17 +117,20 @@ document.addEventListener('DOMContentLoaded', () => {
       this.setAttribute('src', cardArray[cardId].img);
       if(cardsChosen.length === 2){
           setTimeout(checkForMatch, 500);
-      }
-      
-      
-      
-      
-      
-      
-      
+      }        
   }
   
-  
+  function countDown(){
+    currentTime--;
+    timeLeft.textContent = currentTime;
+    
+    if(currentTime === 0){
+        clearInterval(timerId);
+        alert('GAME OVER! Your final score is ' + cardsWon.length);
+    };
+};
+
+let timerId = setInterval(countDown, 1000);
 
 
 
