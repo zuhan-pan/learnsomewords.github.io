@@ -116,8 +116,10 @@ document.addEventListener('DOMContentLoaded', () => {
       cardsChosenId.push(cardId);
       this.setAttribute('src', cardArray[cardId].img);
       if(cardsChosen.length === 2){
-          setTimeout(checkForMatch, 500);
-      }        
+          setTimeout(checkForMatch, 350);
+      }else if(cardsChosen.length > 2){
+          this.setAttribute('src', '7.jpg');
+      }       
   }
   
   function countDown(){
@@ -135,4 +137,5 @@ let timerId = setInterval(countDown, 1000);
 
 
 });//finished this dubm listener
+
 
