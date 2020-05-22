@@ -9,51 +9,51 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [
     {
       name: '1',
-      img: '1.jpg'
+      img: 'pics/1.jpg'
     },
     {
       name: '2',
-      img: '2.jpg'
+      img: 'pics/2.jpg'
     },
     {
       name: '3',
-      img: '3.jpg'
+      img: 'pics/3.jpg'
     },
     {
       name: '4',
-      img: '4.jpg'
+      img: 'pics/4.jpg'
     },
     {
       name: '5',
-      img: '5.jpg'
+      img: 'pics/5.jpg'
     },
     {
       name: '6',
-      img: '6.jpg'
+      img: 'pics/6.jpg'
      },
      {
        name: '1',
-      img: '1.jpg'
+      img: 'pics/1.jpg'
     },
     {
       name: '2',
-      img: '2.jpg'
+      img: 'pics/2.jpg'
     },
     {
       name: '3',
-      img: '3.jpg'
+      img: 'pics/3.jpg'
     },
     {
       name: '4',
-      img: '4.jpg'
+      img: 'pics/4.jpg'
     },
     {
       name: '5',
-      img: '5.jpg'
+      img: 'pics/5.jpg'
     },
     {
       name: '6',
-      img: '6.jpg'
+      img: 'pics/6.jpg'
      }
   ];
 
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement('img');
-      card.setAttribute('src', '7.jpg');
+      card.setAttribute('src', 'pics/7.jpg');
       card.setAttribute('data-id', i);
       card.addEventListener('click', flipCard);
       grid.appendChild(card);
@@ -86,19 +86,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const optionTwoId = cardsChosenId[1];
     
     if(optionOneId === optionTwoId) {
-      cards[optionOneId].setAttribute('src', '7.jpg');
-      cards[optionTwoId].setAttribute('src', '7.jpg');
+      cards[optionOneId].setAttribute('src', 'pics/7.jpg');
+      cards[optionTwoId].setAttribute('src', 'pics/7.jpg');
       alert('You have clicked the same image!');
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
-      cards[optionOneId].setAttribute('src', '9.png');
-      cards[optionTwoId].setAttribute('src', '9.png');
+      cards[optionOneId].setAttribute('src', 'pics/9.png');
+      cards[optionTwoId].setAttribute('src', 'pics/9.png');
       cards[optionOneId].removeEventListener('click', flipCard);
       cards[optionTwoId].removeEventListener('click', flipCard);
       cardsWon.push(cardsChosen);
     } else {
-      cards[optionOneId].setAttribute('src', '7.jpg');
-      cards[optionTwoId].setAttribute('src', '7.jpg');
+      cards[optionOneId].setAttribute('src', 'pics/7.jpg');
+      cards[optionTwoId].setAttribute('src', 'pics/7.jpg');
     }
     cardsChosen = [];
     cardsChosenId = [];
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if(cardsChosen.length === 2){
           setTimeout(checkForMatch, 350);
       }else if(cardsChosen.length > 2){
-          this.setAttribute('src', '7.jpg');
+          this.setAttribute('src', 'pics/7.jpg');
       }       
   }
   
