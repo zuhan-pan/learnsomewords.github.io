@@ -1,3 +1,18 @@
+h1{
+	font-size: 250%;
+}
+
+.new{
+	font-weight: bold;
+	color: red;
+}
+
+.comment{
+	font-style: italic;I
+}
+
+
+
 .right{
 	float:right;
 }
@@ -5,3 +20,4 @@
 .left{
 	float: left;
 }
+
