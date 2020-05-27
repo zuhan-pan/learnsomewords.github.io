@@ -1,4 +1,7 @@
-.pic{
-	width: 500
-	height: 350;
+.right{
+	float:right;
+}
+
+.left{
+	float: left;
 }
