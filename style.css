@@ -8,10 +8,14 @@ h1{
 }
 
 .comment{
+	border-style: inset;
 	font-style: italic;I
 }
 
-
+.content{
+	border-style: outset;
+	max-width: 900px;
+}
 
 .right{
 	float:right;
