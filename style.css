@@ -3,13 +3,12 @@ h1{
 }
 
 .container {
-    width: 200px;
-    height: 120px;
+
 }
 
 /* resize images */
 .container img {
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 120px;;
 }	
 }
