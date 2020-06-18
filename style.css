@@ -8,7 +8,6 @@ h1{
 
 /* resize images */
 .container img {
-    width: 200px;
-    height: 120px;;
+    width: 400px;
+    height: 200px;;
 }	
-}
