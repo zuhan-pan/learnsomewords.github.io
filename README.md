@@ -1,1 +1,1 @@
-This is my boring little website.
+This is my little website.
