@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsChosenId = [];
     resultDisplay.textContent = cardsWon.length;
     if  (cardsWon.length === cardArray.length/2) {
-      alert('Congratulations! You found them all! ');
+      currentTime = 0;
     };
       
   }//close check for match
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if(currentTime === 0){
         clearInterval(timerId);
-        alert('GAME OVER! Your final score is ' + cardsWon.length);
+        alert('GAME OVER! Your final score is ' + cardsWon.length '/6');
     };
 };
 
