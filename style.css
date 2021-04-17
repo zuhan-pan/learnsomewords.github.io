@@ -41,7 +41,7 @@ a:hover {
 
 #wrapper {
 	margin:0 auto;
-	width:700px;
+	width: 700px;
 	background:#ffffff;
 	font-size:1.20em;
 
@@ -67,6 +67,7 @@ a:hover {
 	width:500px;
 	min-height:400px;
 	}
+
 #footer {
 	clear:both;
 	height:100px;
@@ -84,24 +85,6 @@ a:hover {
 	font-size:1.90em;
 	font-weight:normal;
 	letter-spacing:-1px;
-	}
-.date {
-	font-size:0.9em;
-	color:#bbb;
-	cursor:default;
-	letter-spacing:1px;
-	}
-.comments {
-	margin-top:-1em;
-	}
-.comments a {
-	color:#6CC7DC;
-	background:url(images/icon-comment.png) no-repeat 0px 2px;
-	padding-left:20px;
-	padding-right:2px;
-	}
-.comments a:hover {
-	color:#B4C835;
 	}
 
 
@@ -179,7 +162,9 @@ h1 {
 	font-style:italic;
 	}
 
+
 /* Feed */
+
 
 #feed {
 	height:25px;
@@ -207,3 +192,5 @@ a:hover.feed-button {
 	background:url(images/bg-ad-top.png) no-repeat;
 	padding:5px;
 	}
+
+
